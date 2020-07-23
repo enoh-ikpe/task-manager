@@ -54,7 +54,7 @@ function displayTodos() {
         <li data-todo-id="${todo.id}">
           <input type="checkbox" name="" id="">
           <span>${todo.value}</span>
-          <button>Delete</button>
+          <button class= "delete">delete</button>
         </li>
       `;
       allTodosHtml += todoHtml;
