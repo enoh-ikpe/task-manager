@@ -11,11 +11,12 @@ body{
     text-align: center;
     font-size: 20px;
     position: absolute;
-    right: 20px;
-    top: 82px;
+    right: 0px;
+    top: 99px;
     padding: 5px 16px;
     background-color: rgb(129, 184, 145);
     border: 0px;
+    color: white;
 
 }
 .btn:hover {
@@ -24,11 +25,10 @@ body{
 #ul{
      list-style: none;
      background-color: white;
-    /* border: 1px solid red;
-    margin-top: 3rem;  */
+     width: 100%;
 }
 li{
-    padding: 1rem;
+    margin: 1rem;
     text-transform: capitalize;
 }
 .todo{
@@ -40,13 +40,14 @@ li{
 }
 input[type = text]{
     width: 100%;
-    padding: 10px;
+    padding: 21px 10px;
     background-color: rgb(129, 184, 145);
-    border: 0px;
+    border: none;
+
 }
 ::placeholder{
     color: white;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: lighter;
 }
 .strike{
