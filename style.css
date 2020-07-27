@@ -13,7 +13,7 @@ body{
     position: absolute;
     right: 10px;
     top: 170px;
-    padding: 16px 16px;
+    padding: 21px 16px;
     background-color: rgb(129, 184, 145);
     border: 0px;
     color: white;
@@ -24,7 +24,7 @@ body{
 }
 #ul{
      list-style: none;
-     background-color: white;
+     /* background-color: white; */
      width: 90%;
 }
 li{
