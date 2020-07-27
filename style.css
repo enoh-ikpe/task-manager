@@ -1,19 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 body{
     background-image: linear-gradient(to right,rgb(159, 204, 171), rgb(245, 225, 166));
-    /* background-color: red; */
-    /* background-size: cover; */
+    font-family: 'Recursive', sans-serif;
 }
 .delete{
-    background-color:rgb(129, 184, 145);
+    /* background-color:rgb(129, 184, 145); */
     border: none;
 }
 .btn{
     text-align: center;
     font-size: 20px;
     position: absolute;
-    right: 0px;
-    top: 99px;
-    padding: 5px 16px;
+    right: 10px;
+    top: 170px;
+    padding: 16px 16px;
     background-color: rgb(129, 184, 145);
     border: 0px;
     color: white;
@@ -25,26 +25,38 @@ body{
 #ul{
      list-style: none;
      background-color: white;
-     width: 100%;
+     width: 90%;
 }
 li{
+    margin-top: 2rem;
     margin: 1rem;
     text-transform: capitalize;
+    font-size: 12px;
+
 }
 .todo{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+    left:50%;
+     top:39%;
+     transform:translate(-50% , -50%);
   padding: 20px;
   position: absolute;
+  width: 245px;
+  margin: 10px  5px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+}
+.elements{
+    padding: 10px;
 }
 input[type = text]{
-    width: 100%;
     padding: 21px 10px;
     background-color: rgb(129, 184, 145);
     border: none;
+    text-align: center;
 
 }
+
 ::placeholder{
     color: white;
     font-size: 12px;
@@ -52,4 +64,8 @@ input[type = text]{
 }
 .strike{
     text-decoration: line-through;
+}
+h1{
+    text-align: center;
+    padding: 10px;
 }

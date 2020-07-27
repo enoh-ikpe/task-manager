@@ -76,8 +76,9 @@ function getTodoFromNode(node) {
 
 function deleteTodo(todo) {
   var allTodos = getAllTodos();
-  var todoIndex = allTodos.indexOf(todo);
-  allTodos.splice(todoIndex);
+  // var todoIndex = allTodos.indexOf(todo);
+  var todoIndex = allTodos.findIndex((td) => td.id === todo.id);
+  allTodos.splice(todoIndex, 1);
 
   updateTodo(allTodos);
 }
@@ -103,7 +104,8 @@ todoDisplay.addEventListener("click", function () {
     todo.isComplete = event.target.checked;
 
     var allTodos = getAllTodos();
-    var todoIndex = allTodos.indexOf(todo);
+    var todoIndex = allTodos.findIndex((td)=> td.id === todo.id);
+    // var todoIndex = allTodos.indexOf(todo);
     allTodos.splice(todoIndex, 1, todo);
     updateTodo(allTodos);
     displayTodos();
