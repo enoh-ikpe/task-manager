@@ -1,26 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 body{
-    background-image: linear-gradient(to right,rgb(159, 204, 171), rgb(245, 225, 166));
+    background: linear-gradient(to right,rgb(159, 204, 171), rgb(245, 225, 166));
     font-family: 'Recursive', sans-serif;
 }
 .delete{
     /* background-color:rgb(129, 184, 145); */
     border: none;
-}
-.btn{
-    text-align: center;
-    font-size: 20px;
-    position: absolute;
-    right: 10px;
-    top: 170px;
-    padding: 21px 16px;
-    background-color: rgb(129, 184, 145);
-    border: 0px;
-    color: white;
-
-}
-.btn:hover {
-  background-color: rgb(129, 184, 145);
 }
 #ul{
      list-style: none;
@@ -35,37 +20,37 @@ li{
 
 }
 .todo{
-    left:50%;
-     top:39%;
-     transform:translate(-50% , -50%);
-  padding: 20px;
-  position: absolute;
-  width: 245px;
-  margin: 10px  5px;
-  border-radius: 5px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
-}
-.elements{
-    padding: 10px;
-}
-input[type = text]{
-    padding: 21px 10px;
-    background-color: rgb(129, 184, 145);
-    border: none;
+    display: flex;
+    justify-content: center;
     text-align: center;
-
+    margin-top: 50px;
+}
+.todo .card {
+    padding: 10px 20px; 
+}
+.input-btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.input-btn input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 0.5px solid grey;
+    padding-bottom: 7px;
+    margin-top: 20px;
+    outline: none;
+    width: 371px;
+}
+.input-btn button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.task-table{
+    margin-top: 3rem;
 }
 
-::placeholder{
-    color: white;
-    font-size: 12px;
-    font-weight: lighter;
-}
 .strike{
     text-decoration: line-through;
-}
-h1{
-    text-align: center;
-    padding: 10px;
-}
+} 

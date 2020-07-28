@@ -1,6 +1,6 @@
-var addTodoBtn = document.querySelector(".btn");
-var addTodoInput = document.querySelector(".myinput");
-var todoDisplay = document.querySelector("#ul");
+var addTodoBtn = document.querySelector(".btn-primary");
+var addTodoInput = document.querySelector(".addtoInput");
+var todoDisplay = document.querySelector(".table-striped");
 
 function getAllTodos() {
   // Gets todo from local storage;
@@ -41,22 +41,32 @@ function displayTodos() {
   for (var i = 0; i < todos.length; i++) {
     var todo = todos[i];
     if (todo.isComplete) {
-      var todoHtml = `
-        <li data-todo-id="${todo.id}">
-          <input type="checkbox" name="" id="" checked>
-          <span class="strike">${todo.value}</span>
-          <button>Delete</button>
-        </li>
-      `;
+      // var todoHtml = `
+      //   <li data-todo-id="${todo.id}">
+      //     <input type="checkbox" name="" id="" checked>
+      //     <span class="strike">${todo.value}</span>
+      //     <button type="button" class="btn btn-danger">Delete</button> <br>
+      //   </li>
+      // `;
+      var todoHtml = ` <td data-todo-id="${todo.id}">
+       <input type="checkbox" name="" id="" checked>
+       <span class="strike">${todo.value}</span>
+        <button class="btn btn-danger btn-small">delete</button>
+      </td> `;
       allTodosHtml += todoHtml;
     } else {
-      var todoHtml = `
-        <li data-todo-id="${todo.id}">
-          <input type="checkbox" name="" id="">
-          <span>${todo.value}</span>
-          <button class= "delete">delete</button>
-        </li>
-      `;
+      // var todoHtml = `
+      //   <li data-todo-id="${todo.id}">
+      //     <input type="checkbox" name="" id="">
+      //     <span>${todo.value}</span>
+      //     <button class= "delete">delete</button>
+      //   </li>
+      // `;
+      var todoHtml = ` <td data-todo-id="${todo.id}">
+       <input type="checkbox" name="" id="" >
+       <span>${todo.value}</span>
+        <button class="btn btn-danger">delete</button>
+      </td> `;
       allTodosHtml += todoHtml;
     }
   }
