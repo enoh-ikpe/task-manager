@@ -1,6 +1,6 @@
 var addTodoBtn = document.querySelector(".btn-primary");
 var addTodoInput = document.querySelector(".addtoInput");
-var todoDisplay = document.querySelector(".table-striped");
+var todoDisplay = document.querySelector("tbody");
 
 function getAllTodos() {
   // Gets todo from local storage;
@@ -48,11 +48,11 @@ function displayTodos() {
       //     <button type="button" class="btn btn-danger">Delete</button> <br>
       //   </li>
       // `;
-      var todoHtml = ` <td data-todo-id="${todo.id}">
+      var todoHtml = `<tr> <td data-todo-id="${todo.id}">
        <input type="checkbox" name="" id="" checked>
        <span class="strike">${todo.value}</span>
         <button class="btn btn-danger btn-small">delete</button>
-      </td> `;
+      </td> </tr>`;
       allTodosHtml += todoHtml;
     } else {
       // var todoHtml = `
